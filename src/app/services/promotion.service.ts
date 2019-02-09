@@ -26,4 +26,5 @@ export class PromotionService {
     return of(PROMOTIONS.filter((promotion) => (promotion.featured))[0]).pipe(delay(2000));
     
   }
+  
 }
