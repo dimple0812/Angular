@@ -1,8 +1,8 @@
 export class Comment {
 
+    author: string;
     rating: number;
     comment: string;
-    author: string;
     date: string;
 
 }
