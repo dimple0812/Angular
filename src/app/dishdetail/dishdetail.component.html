@@ -13,7 +13,7 @@
             <h3>{{dish.name | uppercase}}</h3>
           </mat-card-title>
         </mat-card-header>
-        <img mat-card-image src={{dish.image}} alt={{dish.name}}>
+        <img mat-card-image src="{{ BaseURL + dish.image}}" alt={{dish.name}}>
         <mat-card-content>
           <p>
             {{dish.description}}
@@ -40,7 +40,7 @@
 
     <div fxFlex="40"  *ngIf="dish">
       
-      <mat-list fxFlex >
+      <mat-list>
         <h3>Comments</h3>
         <mat-list-item *ngFor="let comment of dish.comments">
           <p matLine> {{comment.comment}} </p>
